@@ -613,11 +613,9 @@ begin
 	subme 		: suber port map(r1suben, r2suben, substore, r1out, r2out);
 	
 	leftme 		: lefter port map(slimmm, command, r1slen, r2slen, slstore, r1out, r2out); 
-	--^^^like my wife - Dakota
-	--^^^Definitely leaving this here. - David
+	
 	rightme 	: righter port map(srimmm, command, r1sren, r2sren, srstore, r1out, r2out);
-	--^^^ why not just type me instead - Dakota
-	--    Why not just type "David" instead? - David
+	
 	R1 			: reg port map(exe, R1StoreEn, Store, R1Out, orstore, R1orR2En, andstore, r1anden, movestore, r1movr2en, addstore, r1adden, substore, r1suben, slstore, r1slen, srstore, r1sren);
 	
 	R2 			: reg port map(exe, R2StoreEn, Store, R2Out, orstore, R2orR1En, andstore, r2anden, movestore, r2movr1en, addstore, r2adden, substore, r2suben, slstore, r2slen, srstore, r2sren);
